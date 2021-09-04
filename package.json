@@ -1,0 +1,36 @@
+{
+  "name": "gq_remn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwhong95/gq_remn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwhong95/gq_remn/issues"
+  },
+  "homepage": "https://github.com/kwhong95/gq_remn#readme",
+  "dependencies": {
+    "apollo-server-express": "2.16.1",
+    "bcrypt": "5.0.0",
+    "concurrently": "5.3.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "5.10.0",
+    "validator": "13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  }
+}
